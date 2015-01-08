@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sitemesh xmlns="http://sitemesh.org/xml/config">
+    <!-- Map default decorator. This shall be applied to all paths if no other paths match. -->
+    <mapping decorator="/WEB-INF/views/layout.jsp"/>
+    <!-- Exclude path from decoration. -->
+    <mapping path="/account/login" exclude="true"/>
+    <!--<mapping path="/*.special.jsp" decorator="/special-decorator.html"/>-->
+    <mapping path="/static/*" exclude="true"/>
+    <mapping path="/webjars/*" exclude="true"/>
+
+</sitemesh>
